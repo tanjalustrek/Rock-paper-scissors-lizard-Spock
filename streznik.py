@@ -79,9 +79,9 @@ def zakljuci_prikaz():
 
     if moja_igra.trenutna_igra >= igra.STEVILO_IGER_V_RUNDI + 1 or logicna_zmaga_iger:
         #Če se je runda končala, preverim če je kdo zmagal in to shranim.
-        if(moja_igra.zmage_igre1 > moja_igra.zmage_igre2):
+        if moja_igra.zmage_igre1 > moja_igra.zmage_igre2:
             moja_igra.zmage_runde1 = moja_igra.zmage_runde1 + 1
-        elif(moja_igra.zmage_igre2 > moja_igra.zmage_igre1):
+        elif moja_igra.zmage_igre2 > moja_igra.zmage_igre1:
             moja_igra.zmage_runde2 = moja_igra.zmage_runde2 + 1
         
         #Resetiram spremenljivke, ki jih uporabljam za igranje posamezne runde.
@@ -141,7 +141,7 @@ def prikazi_zmagovalca():
     #Preverimo, če je kdo zmagal in spremenimo število zmag zmagovalca.
     if rezultat == 1:
         moja_igra.zmage_igre1 = moja_igra.zmage_igre1 + 1
-    elif(rezultat == -1):
+    elif rezultat == -1:
         moja_igra.zmage_igre2 = moja_igra.zmage_igre2 + 1
 
     #Ponovno shranimo igro.

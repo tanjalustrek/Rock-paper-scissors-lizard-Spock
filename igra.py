@@ -3,7 +3,7 @@ from random import randint
 STEVILO_RUND = 5
 MAKSIMALNO_RUND = 10
 STEVILO_IGER_V_RUNDI = 3
-CAS_ZA_IZBIRO = 5
+CAS_ZA_IZBIRO = 7
 
 #Definirani razred Igra. Vsebuje vse spremenljivke, ki so potrebne za pravilni prikaz igre.
 class Igra:
@@ -83,7 +83,7 @@ def predvidevaj(igra):
                 
                 case ["rock", "scissors"]:
                     zeljeni = dobi_zeljenega(igra.izbrani2, ["lizard"])
-                    if(zeljeni != None):
+                    if zeljeni != None:
                         return zeljeni
                     
                     return dobi_zeljenega(igra.izbrani2, ["paper", "scissors"])
@@ -93,7 +93,7 @@ def predvidevaj(igra):
                 
                 case ["rock", "spock"]:
                     zeljeni = dobi_zeljenega(igra.izbrani2, ["scissors"])
-                    if(zeljeni != None):
+                    if zeljeni != None:
                         return zeljeni
                     
                     return dobi_zeljenega(igra.izbrani2, ["rock", "lizard"])
@@ -103,21 +103,21 @@ def predvidevaj(igra):
                 
                 case ["paper", "lizard"]:
                     zeljeni = dobi_zeljenega(igra.izbrani2, ["spock"])
-                    if(zeljeni != None):
+                    if zeljeni != None:
                         return zeljeni
                     
                     return dobi_zeljenega(igra.izbrani2, ["rock", "paper"])
                 
                 case ["paper", "spock"]:
                     zeljeni = dobi_zeljenega(igra.izbrani2, ["rock"])
-                    if(zeljeni != None):
+                    if zeljeni != None:
                         return zeljeni
                     
                     return dobi_zeljenega(igra.izbrani2, ["scissors", "spock"])
                 
                 case ["scissors", "lizard"]:
                     zeljeni = dobi_zeljenega(igra.izbrani2, ["paper"])
-                    if(zeljeni != None):
+                    if zeljeni != None:
                         return zeljeni
                     
                     return dobi_zeljenega(igra.izbrani2, ["lizard", "spock"])

@@ -3,8 +3,8 @@
 <head>
     <title>RPSLS</title>
     <style> type="text/css">
-		h1 {color:red}
-        body { background-color: rgb(0, 150, 255); }
+		h1 {color: black}
+        body {background-color: rgb(0, 150, 255)}
     </style>
 </head>
 <body>

@@ -37,7 +37,7 @@ class Igra:
             self.izbrani2 = dict["izbrani2"]
             self.statusi = dict["statusi"]
 
-#Funkcija, ki iz izborov ugotovi kdo zmaga, in vrne številko glede na rezultat (1 za igralca, -1 za računalnik in 0 za neizenačeno).
+#Funkcija, ki iz izborov ugotovi kdo zmaga, in vrne številko glede na rezultat (1 za igralca, -1 za računalnik in 0 za izenačeno).
 def oceniIzbora(izbor1, izbor2):
     if izbor1 == izbor2:
         return 0

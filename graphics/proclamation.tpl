@@ -27,8 +27,8 @@
 		/*Na strani prikažem ta tekst.*/
 		proclamation.innerHTML = result;
 		
-		/*Po sekundi in pol kličem funkcijo reset_game.*/
-		setTimeout(reset_game, 1500);
+		/*Po dveh sekundah kličem funkcijo reset_game.*/
+		setTimeout(reset_game, 2000);
 		
 		function reset_game(){
 			/*Funkcija stran preusmeri na originalno stran.*/
